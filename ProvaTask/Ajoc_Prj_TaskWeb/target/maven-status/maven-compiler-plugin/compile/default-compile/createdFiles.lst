@@ -1,0 +1,10 @@
+com\mycompany\ajoc_prj_taskweb\servlets\Ajoc_TarefaServlet.class
+com\mycompany\ajoc_prj_taskweb\Ajoc_util\Ajoc_conexao.class
+com\mycompany\ajoc_prj_taskweb\resources\JakartaEE10Resource.class
+com\mycompany\ajoc_prj_taskweb\Ajoc_DAO\Ajoc_ProjetoDAO.class
+com\mycompany\ajoc_prj_taskweb\Ajoc_Model\Ajoc_Tarefa.class
+com\mycompany\ajoc_prj_taskweb\JakartaRestConfiguration.class
+com\mycompany\ajoc_prj_taskweb\Ajoc_DAO\Ajoc_TarefaDAO.class
+com\mycompany\ajoc_prj_taskweb\servlets\Ajoc_ProjetoServlet.class
+com\mycompany\ajoc_prj_taskweb\Ajoc_Model\Ajoc_Projeto.class
+com\mycompany\ajoc_prj_taskweb\Ajoc_util\Ajoc_ManipulaData.class
