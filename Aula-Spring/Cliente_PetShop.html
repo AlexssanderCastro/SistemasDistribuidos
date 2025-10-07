@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO supply a title</title>
+</head>
+
+<body>
+
+    
+
+
+
+    <label for="txtId">ID:</label>
+    <input type="text" id="txtId">
+    <label for="txtNome">Nome:</label>
+    <input type="text" id="txtNome">
+    <label for="txtCpf">CPF:</label>
+    <input type="text" id="txtCpf">
+    <label for="txtData_Nasc">DATA DE NASCIMENTO:</label>
+    <input type="text" id="txtData_Nasc">
+
+    <button onclick="salvar()">Salvar</button>
+    <button onclick="consultar()">Listar</button>
+
+    <div id="conteudo" ></div>
+
+    <script>
+        function salvar() {
+            var id= document.getElementById("txtId").value;
+            var nome= document.getElementById("txtNome").value;
+            var cpf= document.getElementById("txtCpf").value;
+            var data_nasc= document.getElementById("txtData_Nasc").value;
+
+            var xmlHTTP_PUT = new XMLHttpRequest();
+            var url = 'http://localhost:8093/api/pessoas';
+
+            xmlHTTP_PUT.open("PUT", url, true);
+            xmlHTTP_PUT.setRequestHeader("Content-Type", "application/json");
+            alert('{"idpessoa":"'+id+'","nome":"'+nome+'","cpf":"'+cpf+'","data_nasc":"'+data_nasc+'"}');
+            xmlHTTP_PUT.send('{"idpessoa":"'+id+'","nome":"'+nome+'","cpf":"'+cpf+'","data_nasc":"'+data_nasc+'"}');
+        }
+
+        function consultar() {
+
+            var xmlHTTP_GET = new XMLHttpRequest();
+            var url = 'http://localhost:8093/api/pessoas';
+
+            xmlHTTP_GET.open("GET", url, true);
+            xmlHTTP_GET.onreadystatechange = function()
+            {
+                if (xmlHTTP_GET.readyState == 4 && xmlHTTP_GET.status == 200)
+                {
+                    var lstP = JSON.parse(xmlHTTP_GET.responseText);
+                    listarPessoas(lstP)
+                }
+
+            }
+
+            xmlHTTP_GET.open("GET", url, true);
+            xmlHTTP_GET.send();
+
+            function listarPessoas(lstP) {
+                var out = '<TABLE border="2"><tr><th>ID</th><th>NOME</th><th>CPF</th><th>DATA DE NASCIMENTO</th></tr>';
+                var i;
+                for(i=0;i<lstP.length;i++){
+                    out += '<tr><td>'+lstP[i].idpessoa+'</td>'+
+                    '<td>'+lstP[i].nome+'</td>'+
+                    '<td>'+lstP[i].cpf+'</td>'+
+                    '<td>'+lstP[i].data_nasc+'</td>'+
+                    '</tr>';   
+                }
+                out+= '</TABLE>';
+                document.getElementById("conteudo").innerHTML = out;
+            
+             }
+        }
+    </script>
+</body>
+
+</html>
