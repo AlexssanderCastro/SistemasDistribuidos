@@ -1,0 +1,11 @@
+[TABELA:projetos]
+{"ajoc_id_projeto":"e72bdb3f-59af-4f7e-a801-53560232bfad","ajoc_nome":"teste","ajoc_descricao":"tese","ajoc_data_criacao":"01/01/2000","ajoc_data_fim":"01/01/2000"}
+{"ajoc_id_projeto":"58caef84-33c1-485c-8f82-a61790f4d2fc","ajoc_nome":"abccsd","ajoc_descricao":"avascca","ajoc_data_criacao":"11/09/2025","ajoc_data_fim":"01/10/2025"}
+{"ajoc_id_projeto":"adeb7477-e56e-4cf0-8ced-925b478b665c","ajoc_nome":"abacate","ajoc_descricao":"asfasffa","ajoc_data_criacao":"02/09/2025","ajoc_data_fim":"09/09/2025"}
+{"ajoc_id_projeto":"7c883eb3-f102-40ea-b055-df731477ce3b","ajoc_nome":"papapap","ajoc_descricao":"afafasf","ajoc_data_criacao":"01/01/2000","ajoc_data_fim":"01/01/2000"}
+{"ajoc_id_projeto":"ddeb70ab-1d4e-4b98-9b06-518e6459083d","ajoc_nome":"teste2123123","ajoc_descricao":"123123","ajoc_data_criacao":"01/01/2000","ajoc_data_fim":"01/01/2000"}
+{"ajoc_id_projeto":"4a5c88dc-1694-418d-9671-81c2e5e1c083","ajoc_nome":"abacate","ajoc_descricao":"asfasffa","ajoc_data_criacao":"02/09/2025","ajoc_data_fim":"09/09/2025"}
+
+[TABELA:tarefas]
+{"ajoc_id_tarefa":"fcf29495-aa09-4b47-84f1-baccf9568245","ajoc_nome":"egwgwsge","ajoc_descricao":"sgsegseg","ajoc_prioridade":"ssegesg","ajoc_data_inicio":"01/01/2000","ajoc_data_fim":"01/01/2000","ajoc_id_projeto":"58caef84-33c1-485c-8f82-a61790f4d2fc"}
+{"ajoc_id_tarefa":"21334fb9-e708-4b24-a36d-117bd52d5e63","ajoc_nome":"qwqwe","ajoc_descricao":"qweqwe","ajoc_prioridade":"qweqwe","ajoc_data_inicio":"01/01/2000","ajoc_data_fim":"01/01/2000","ajoc_id_projeto":"e72bdb3f-59af-4f7e-a801-53560232bfad"}
